@@ -11,7 +11,11 @@ class Toplearn extends Component {
             <div className="Toplearn">
                 <h1>شمارنده من</h1>
                 <br/>
-                <Counter count={5}/>
+                <Counter count={5} firstName="Sasan"/>
+                <Counter myArray={[0,1,2,5]} isLoggedIn={true}/>
+                <Counter count={10}>
+                    این شمارنده من است
+                </Counter>
             </div>
         )
     }

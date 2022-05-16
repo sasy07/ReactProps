@@ -1,4 +1,3 @@
-import {Component} from "react";
 
 // class Counter extends Component {
 //
@@ -16,12 +15,13 @@ import {Component} from "react";
 //     }
 // }
 
-const Counter = ({count}) => {
-    console.log(count);
+const Counter = (props) => {
+    console.log(props);
 
     return (
         <div>
-            <p>شمارنده : {count}</p>
+            <p>شمارنده : {props.count}</p>
+            <h3>{props.children}</h3>
         </div>
     )
 }
